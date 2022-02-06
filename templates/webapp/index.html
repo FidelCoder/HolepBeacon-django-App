@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Holep Beacon</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/hologo.jpeg'%}" rel="icon">
+  <link href="{% static 'img/hologo.jpeg' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/remixicon/remixicon.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container-fluid">
+
+      <div class="row justify-content-center">
+        <div class="col-xl-9 d-flex align-items-center justify-content-lg-between">
+          <h1 class="logo me-auto me-lg-0"><a href="{% url 'home'%}">Holep Beacon</a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+          <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+              <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+              <li><a class="nav-link scrollto" href="#about">About</a></li>
+              <li><a class="nav-link scrollto" href="#services">Services</a></li>
+              <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+              <li><a class="nav-link scrollto" href="#pricing">Our Values</a></li>
+              <li><a class="nav-link scrollto" href="{% url 'blog' %}">Blog</a></li>
+              <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="#">Drop Down 1</a></li>
+                  <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="#">Deep Drop Down 1</a></li>
+                      <li><a href="#">Deep Drop Down 2</a></li>
+                      <li><a href="#">Deep Drop Down 3</a></li>
+                      <li><a href="#">Deep Drop Down 4</a></li>
+                      <li><a href="#">Deep Drop Down 5</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Drop Down 2</a></li>
+                  <li><a href="#">Drop Down 3</a></li>
+                  <li><a href="#">Drop Down 4</a></li>
+                </ul>
+              </li>
+              <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+
+          <a href="#about" class="get-started-btn scrollto">Get Started</a>
+        </div>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-8">
+          <h1>Home OF Love in Conjuntion With Beacon Of Hope</h1>
+          <h2>Do what They Do best</h2>
+          <a href="https://www.youtube.com/watch?v=ZaEKyLCV7CY&t=279s" class="glightbox play-btn mb-4"></a>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+          <p>Beacon of Hope Counseling and Career Centre in conjunction with Home of Love and Empowerment Project has it office at Nyambene House 3rd floor room 6c opposite Gill House. It was established in the year 2009, having adequate experience so far, on the four main areas, (Counseling, training, supervision and consultancy) with more volunteering initiative on the same, through our cooperate social responsibility program. BHCC Centre is grounded on character, personal and professional development. It is staffed by adequate professional counselors, trainers and supervision who always exceeds client expectations. With absolute focus on counseling, training and consultancy services, training and consultancy services BHCC Centre promotes an integration approach to counseling based on a humanistic model of counseling and training. In administrating the above services, great care and attention is taken to respect and enhance the autonomy of client, trainers, supervisors as well as internal staffs and faculties.</p>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              The organizations are currently collaborating with the following institutions:
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Africa Institute of Professional Counseling (AIPC) in offering Certificate courses.</li>
+              <li><i class="ri-check-double-line"></i> Kenya Counseling and Psychological Association (KCPA) for Consultancy Services and Trainings.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+             major focus is on: <br>
+             <ul>
+             <li><i class="ri-check-double-line"></i> To offer professional training in counseling and related behavioral science.</li>
+             <li><i class="ri-check-double-line"></i> To conduct research in the field of counseling.</li>
+             <li><i class="ri-check-double-line"></i> To offer counselor supervision services in Kenya and in the region.</li>
+             <li><i class="ri-check-double-line"></i> To play a significant role in the fight against social challenges like drug abuse, HIV/AIDS and domestic valence.</li>
+             <li><i class="ri-check-double-line"></i> To collaborate with other institutions in the field of counseling and related behavioral science.</li>
+             <li><i class="ri-check-double-line"></i> To build capacity in trauma and management to the meet disaster situations in the region.</li>
+             </ul>
+            </p>
+            <a href="#" class="btn-learn-more">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>We help you discover your wellness and be at your best.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <!--<div class="icon"><i class="bx bxl-dribbble"></i></div>-->
+              <h4><a href="">COUNCELLING</a></h4>
+              <p>The organizationspromotes an eclectic/integrative approach to counseling base on a humanistic model of counseling and training. In both counseling and training great care is taken to respect and enhance the autonomy of our clients, trainees and supervisors all this is derived from principles of character, competence to the community on global perspective. Effectiveness and efficiency is what is valued most. </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+              <!--<div class="icon"><i class="bx bx-file"></i></div>-->
+              <h4><a href="">RESOURCE CENTRE</a></h4>
+              <p>The organizations have Resource Centres whose main purpose shall be to work with relevant bodies to disseminate the right information in regards to thorny issues like HIV, Non-Communicable Disease (NCDs) and lifestyle diseases diabetics, ulcers and high blood pressure. The Resource Centre shall also organise several work-shops, retreats, training sensitisation and capacity building in the community and not limited to work places in Coperate and government institutions. </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <!--<div class="icon"><i class="bx bx-tachometer"></i></div>-->
+              <h4><a href="">THERAPY</a></h4>
+              <p>Regardless of your specific challenges, you can benefit from having an impartial observer listen and offer guidance Our specialities; Depression, Relationships, Anger, Cognitive Behavioral Therapy, Psychodynamic Therapy, Psychoanalysis, Anxiety, Psych Careers, Stress, Psychiatry</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <!--<div class="icon"><i class="bx bx-world"></i></div>-->
+              <h4><a href="">TRAINING PROGRAMME</a></h4>
+              <p>Our diversified programs address specific needs of our target groups in schools, medical settings, criminal justice system, religious institutions and marriage & family. </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <!--<div class="icon"><i class="bx bx-slideshow"></i></div>-->
+              <h4><a href="">CONSULTANCY IN CHILD DEVELOPMENT</a></h4>
+              <p>consultants will work closely with ECD Project Officer and project team in implementing of project objectives, providing technical support, working with health and schools.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <!--<div class="icon"><i class="bx bx-arch"></i></div>-->
+              <h4><a href="">OPEN/ IN HOUSE SEMINARS</a></h4>
+              <p>We Conduct Open/In House Seminars under the Following Titles:- HIV/AIDs Counseling, Counseling Skills, Drug and Substances Abuse, Effective parenting Skills, Stress and stress Management in the workplace, Guidance and counseling for Teachers, Leadership Skills for Head Teachers, Discipline and punishment in schools, Counseling skills for effective patient care, Trauma in Children, Psychological Debriefing and Trauma Counseling, Disaster preparedness and management for Law Enforcement Officers, Security Management, Fraud detection and investigation. </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Call To Action</h3>
+            <p> We help you discover your wellness and be at your best. Get to us before it is late</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+
+ <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Our Team</h2>
+          <p></p>
+        </div>
+
+        <div class="row gy-5">
+
+          <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="200">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{% static 'img/griff.jpeg' %}" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+              <p>
+              AS a Software Developer it is within my capabilities to design, create deploy and support software(a website, mobile application, desktop applications, e-commerce solutions). Data analytics is my thing and I have wide knowledge the related line. I'm proficient in Kotlin, Java, Rust, pHp and python. I'm an AI evangelist I understand ML, DL, RL in depth and I get exited with code I work hand in hand with the organizations to solve it related challenges
+griffinesonyango@gmail.com
+              </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/griffines-onyango-a138b11b4/"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <h4>ONYANGO ODUOL</h4>
+                <span>Junior Software Developer</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{% static 'img/ebba.jpeg' %}" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+              <p>
+              Ebba loves what she does and she does what she loves with a passion!
+Counselling psychologist, Educationist, trainer and program coordinator and a poet. Ebba has organised and done several programmes with PSI, KHIBIT, and The National Treasury amongst other reputable organisation she has successfully done workshops, trainings and she is also a qualified therapist tender and compassionate with the clients. Ebba Magolo understands the language of children and happily does child counselling. Currently the Director HOLEP 
+              </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+                <h4>EBBA OTIENO MAGOLO</h4>
+                <span>Director HOLEP</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="600">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{% static 'img/pp.jpeg' %}" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+              <p>
+              Well skilled, trained, competent, professional trainer, teacher, marketer, has masters and has served in field for over 10 yrs. He is popular for his speciality in Psychology counseling 
+              </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+                <h4>JULIUS GITARI</h4>
+                <span>Director</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6 order-2 order-lg-1">
+            <div class="icon-box mt-5 mt-lg-0">
+              <h4>Patient</h4>
+              <p>We are very patient. Going to the next step of explanation for our patient/client to clearly understand the content of the information we are giving. For that we make sure to have ample time for our client/patient.</p>
+            </div>
+            <div class="icon-box mt-5">
+              <h4>Warm</h4>
+              <p>We provide non-possessive warmth in a counseling environment. Smile and always show concern and acceptance to our patient/client.</p>
+            </div>
+            <div class="icon-box mt-5">
+              <h4>Knowledgeable</h4>
+              <p>Our counsellors have good knowledge and experience, and we work closely amongst us to make progress with tha we give our to our clients </p>
+            </div>
+            <div class="icon-box mt-5">
+              <h4>Personal Integrity</h4>
+              <p>Our counsellors maintain a high degree of personal integrity, credibility and mutual trust.</p>
+            </div>
+          </div>
+          <div class="image col-lg-6 order-1 order-lg-2" style='background-image: url("{% static 'img/features.jpg' %}");'></div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container">
+
+        <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="{% static 'img/aipc.jpg' %%}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="{% static 'img/gok.jpg' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="{% static 'img/kcpa.png' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="{% static 'img/KIBIT.png' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="{% static 'img/ndeg.jpg' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="{% static 'img/nita.jpg' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="{% static 'img/PSI.png' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="{% static 'img/ttti.png' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+
+
+ <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container" data-aos="fade-up">
+
+        <ul class="nav nav-tabs row gy-4 d-flex">
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+              <i class="bi bi-binoculars color-cyan"></i>
+              <h4>OUR PROGRAMME</h4>
+            </a>
+          </li><!-- End Tab 1 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+              <i class="bi bi-box-seam color-indigo"></i>
+              <h4>TRAINING</h4>
+            </a>
+          </li><!-- End Tab 2 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+              <i class="bi bi-brightness-high color-teal"></i>
+              <h4>COURSES</h4>
+            </a>
+          </li><!-- End Tab 3 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+              <i class="bi bi-command color-red"></i>
+              <h4>DEVELOPEMNT PROGRAMME</h4>
+            </a>
+          </li><!-- End Tab 4 Nav -->
+        </ul>
+
+        <div class="tab-content">
+
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+                <h3>OUR PROGRAMME</h3>
+                <p class="fst-italic">
+                  The organizations are equiped with proffesional and certified personnels who value your wellbeing, and that is why they strive to ensure your satisfaction. The organizations offers certification courses and training 
+                </p>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                <img src="{% static 'img/ddi1.jpg' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content 1 -->
+
+          <div class="tab-pane" id="tab-2">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>TRAINING</h3>
+                <p>
+                  We have a number of training programmes aimed at different persons:
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> Psychological debriefing and Trauma</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Career Guidance and counseling</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Premarital counseling</li>
+                  <li><i class="bi bi-check-circle-fill"></i>Grief and Bereavement counseling</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Motivation at workplace</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Managing stress at workplace</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Working effectively with Criminal Offenders</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Marital Therapy</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Family Therapy</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Child Therapy</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Effective parenting</li>
+                </ul>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="{% static 'img/ddi2.jpg' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content 2 -->
+
+          <div class="tab-pane" id="tab-3">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>COURSES</h3>
+                <p>
+                  We offer diploma and certificate courses with practical experiences
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> Psychological Counseling</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Criminology and Forensic Studies</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Counselor Supervision</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Crime Scene Management</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Correctional Services</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Basic Counseling Skills</li>
+                  <li><i class="bi bi-check-circle-fill"></i> HIV and AIDS Counselling Skills</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Youth guidance and Counseling</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Counselling For Managers</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Counselling For Loss</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Stress and Stress Management Skills</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Effective Parenting Skills</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Guidance and counseling in schools</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Premarital counseling</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Marital counseling</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Family counseling</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Substance abuse Counseling</li>
+                  <li><i class="bi bi-check-circle-fill"></i> V.C.T Counseling</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Basic counseling skills</li>
+                  <li><i class="bi bi-check-circle-fill"></i>Sex therapy/counseling</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Youth ministry counseling</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Refreshment counseling</li>
+                  <li><i class="bi bi-check-circle-fill"></i>Retirement counseling</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Workplace conflict</li>
+                  <li><i class="bi bi-check-circle-fill"></i>Mid-life crisis counseling</li>
+                  <li><i class="bi bi-check-circle-fill"></i>Supervision counseling</li>
+
+                </ul>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="{% static 'img/ddi3.png' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content 3 -->
+
+          <div class="tab-pane" id="tab-4">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>DEVELOPMENT PROGRAMME</h3>
+                <p>
+                  Our professional development courses are tailored to specific needs of a wide range of organizations, groups, companies and individuals. They include:
+                </p>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> Basic Counseling Skills</li>
+                  <li><i class="bi bi-check-circle-fill"></i> HIV/AIDs Counseling Skills</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Youth guidance and Counseling</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Counseling skills for Managers</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Counseling for loss</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Grief and Bereavement</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Stress and stress Management</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Effective parenting Skills</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Guidance and counseling in schools</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Psychological Debriefing and Trauma Counseling</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Premarital counseling</li>
+                </ul>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="{% static 'img/ddi4.png' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content 4 -->
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="text-center title">
+          <h3>What we have achieved so far</h3>
+          <p>We are smart everyday to offer the best services</p>
+        </div>
+
+        <div class="row counters position-relative">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="256" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Clients</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="130" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Projects</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="168" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Hours Of Support Every week</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="17" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Hard Workers</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Certification</li>
+              <li data-filter=".filter-card">Therapy</li>
+              <li data-filter=".filter-web">Child Development</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'img/cert1.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p>Certification</p>
+              <a href="{% static 'img/cert1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="certification"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="{% static 'img/chil1.webp' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Child Development</h4>
+              <p></p>
+              <a href="{% static 'img/chil1.webp' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'img/cert2.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p>Certification</p>
+              <a href="{% static 'img/cert2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="certification"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="{% static 'img/therap3.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Child therapy</h4>
+              <p>We give special attention to child development, counselling/therapy sessions</p>
+              <a href="{% static 'img/therap3.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="therapy"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="{% static 'img/chil2.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Child Development</h4>
+              <p></p>
+              <a href="{% static 'img/chil2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'img/cert3.png' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4></h4>
+              <p>Certification</p>
+              <a href="{% static 'img/cert3.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="certification"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="{% static 'img/therap1.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>sychological therapy</h4>
+              <p>We have sessions and always make it better</p>
+              <a href="{% static 'img/therap1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="sychological therapy"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="{% static 'img/therap2.webp' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Cognitive Therapy</h4>
+              <p>We have personnel with special skills in cognitive therapy</p>
+              <a href="{% static 'img/therap2.webp' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="therapy"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="{% static 'img/chil3.png' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Child Development</h4>
+              <p></p>
+              <a href="{% static 'img/chil3.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>OUR VALUES</h2>
+          <p> HOME OF LOVE AND EMPOWERMENT PROJECT IN CONJUNCTION WITH BEACON OF HOPE
+TAKING YOU A STEP AHEAD
+</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box">
+              <h3>Mission & Vision</h3>
+              <h4>MISSION</h4>
+              <ul>
+                <p>
+                To develop and enhance an enabling learning requirement for its heterogeneous clientele in order to acquire and maintain pragmatic knowledge, creativity and enterprise with strong orientation for ethical values that enables participatory leadership, transparency, accountability and honesty in their service to humanity.
+                </p>
+              </ul>
+              <h4>VISSION</h4>
+              <ul>
+                  <p>
+                  To become the leading Centre of excellent in the provision of solution to psychological counselors training, consultancies, supervision and research services in East and Central Africa 
+                  </p>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#pricing" class="btn-buy">Reliability</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+            <div class="box recommended">
+              <!--<span class="recommended-badge">Recommended</span>-->
+              <h3>Core Values & Phylosophy</h3>
+              <h4>CORE VALUES</h4>
+              <ul>
+                <li>Character</li>
+                <li>Innovation</li>
+                <li>Diversity</li>
+                <li>Competence</li>
+                <li>Community</li>
+              </ul>
+              <h4>CORE VALUES</h4>
+              <p>
+              BHCC Centre helps to realize and nature the strongholds, that is intellectual physical, spiritual, economic And social development of the client and be aware of the ability, capacity and adequate potential in oneself.
+To Improve Every Life through Innovative Giving in Education, empowering humanity with information and creating a healthy continent 
+              </p>
+              <div class="btn-wrap">
+                <a href="#pricing" class="btn-buy">Accountability</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+            <div class="box">
+              <h3>Reason To Choose Us</h3>
+              <h4>OUR BELIEF</h4>
+              <p>
+              our therapeutic work is guided by the belief in the human worth and dignity of our clients. In assisting people, we endeavor to protect and promote each person’s rights to self determination and individuality. We also believe that in order for counseling and therapy to be effective, clients must feel empowered and supported in identifying goals for change and in developing effective strategies for resolving their difficulties.
+
+              </p>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Fidelity</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+
+
+
+
+<!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-in">
+          <h2>Make Your Generous Contribuition</h2>
+          <h3>Why contribute <span>to our organizations</span>?</h3>
+          <p>We are looking to expand our operations have a bigger team. With your contribution it it will be a big push to us and we will be so gratefull to you.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="box" data-aos="fade-up">
+              <h4>PAYBILL</h4>
+              <p>400222</p>
+            </div>
+            <div class="box" data-aos="fade-up">
+              <h4>ACCOUNT NUMBER</h4>
+              <p>1127398</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+
+
+
+
+    <!-- ======= Faq Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container-fluid">
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+              <h3>Frequently Asked <strong>Questions</strong></h3>
+              <p>
+                Here are some questions we frequently get about therapy, therapists/counsellor, and the process. Click on the question (or the down arrow at the right) to see the answer.
+              </p>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1">What can I talk about? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <p>
+                      You can talk about anything that is on your mind – counselling is a safe space for you to bring anything you feel you need to discuss or to help you process any difficulties you may be facing.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed">Is this a confidential service? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                    Yes, what you say to your counsellor is confidential and all of our staff adhere to a code of conduct and policies regarding confidentiality. Information you provide with use will not be shared with a third party other than in exceptional circumstances such as safeguarding issues or if required by law
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed">What if I work in shifts? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      If you are a shift worker, we will try our best to accommodate your working patterns with a counsellor who can offer flexibility.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed"> My counsellor isn’t a good fit with me – can I change counsellors?? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      Although we try our best to match you with a counsellor who we feel will suit your needs, on occasion your allocated counsellor will not be a good fit. Please do feel able to contact the Centre Clinical Manager who will discuss your concerns with you and if possible, re-allocate you to another counsellor.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("{% static 'img/faq.jpg' %}");'>&nbsp;</div>
+        </div>
+
+      </div>
+    </section><!-- End Faq Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>We are one contact away reach out to us for any questions, to get our services, to join our upcoming events</p>
+        </div>
+      </div>
+
+      <div>
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/d/embed?mid=1SuwNJ-HqTWSF2Bmaur7HqmVqZBk&ie=UTF8&hl=en&msa=0&ll=-1.2897330000000091%2C36.80705299999999&spn=0.008581%2C0.010707&z=16&iwloc=0004817447742f770a649&output=embed" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="container">
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="ri-map-pin-line"></i>
+                <h4>Location:</h4>
+                <p>P.O.Box 75891-00200 NAIROBI</p>
+              </div>
+
+              <div class="email">
+                <i class="ri-mail-line"></i>
+                <h4>Email:</h4>
+                <p>holepcompanyltd@gmail.com</p>
+                <p>beaconhopeco@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="ri-phone-line"></i>
+                <h4>Call:</h4>
+                <p>+254722720690</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="https://formsubmit.co/holepcompanyltd@gmail.com" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Holep Beacon</h3>
+      <p>Reach out to us on our various social media handles.</p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>HOLEPBEACON</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/knight-simple-one-page-bootstrap-template/ -->
+        Designed & Developed by <a href="https://www.linkedin.com/in/griffines-onyango-a138b11b4/">Griffins Oduol</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/purecounter/purecounter.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
