@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog',
     'webapp',
+    'curriculum',
+    'app_users',
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [
@@ -135,6 +138,8 @@ LOGIN_REDIRECT_URL = reverse_lazy('student_course_list')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

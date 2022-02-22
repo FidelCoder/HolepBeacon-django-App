@@ -1,0 +1,65 @@
+ <html>
+ <style>
+
+.image-grid {
+  --gap: 16px;
+  --num-cols: 4;
+  --row-height: 300px;
+
+  box-sizing: border-box;
+  padding: var(--gap);
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+}
+
+.image-grid > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Anything udner 1024px */
+@media screen and (max-width: 1024px) {
+  .image-grid {
+    --num-cols: 0;
+    --row-height: 200px;
+  }
+}
+
+
+ </style>
+{% block content %}
+<div class='image-grid'>
+
+<form action="." method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form.as_p}}
+    <!--<button type="submit" class="btn btn-lg btn-success">Upload</button>-->
+    </form>
+    {% if obj %}
+    <!--<h3>Succesfully uploaded : {{img_obj.caption}}</h3>-->
+    <!--<img src="{{ obj.image.url}}" alt="image" class="img-thumbnail" >-->
+    {% endif %}
+    <hr>
+    {% for x in img %}
+    {% if forloop.first %}<div class="row ">{% endif %}
+    <div class="col-lg-4 col-md-4 col-12" >
+    <div class="text-center mt-2">
+    <img src="{{x.image.url}}" height="70%" width="70%" class="img-thumbnail" alt="...">
+    <h2 class="text-center" >{{x.caption}}</h2></div>
+    </div>
+    {% if forloop.counter|divisibleby:3 %}
+    </div>
+    <div class=row>{% endif %}
+        {% if forloop.last %}</div>{% endif %}
+        {% endfor %}
+    </div>
+  </div>
+        
+
+{%endblock%}
+</html>
